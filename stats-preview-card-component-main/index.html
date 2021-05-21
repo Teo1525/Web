@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+<body>
+  <style>
+html {
+  background: hsl(233, 47%, 7%);
+  color:#fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+body{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  background: hsl(244, 38%, 16%);
+  display: grid;
+  grid-template-columns: 55% 45%;
+  width:800px;
+  height:400px;
+  margin-top: 100px;
+  border-radius:10px;
+}
+.text{
+  text-align: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+h3 {
+  word-spacing: 60px;
+}
+h5{
+  text-transform: uppercase;
+  word-spacing: 40px;
+}
+.img{ 
+  background:url('C:/Users/Pc/Desktop/stats-preview-card-component-main/images/image-header-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(61, 3, 97);
+  background-blend-mode: screen;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  border-radius: 0 10px 10px 0;
+}
+.text{
+  padding: 50px 20px;
+}
+@media screen and (max-width:375px){
+  .container{
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-template-columns: auto;
+  width: 300px;
+  height: 800px;
+  margin-top: 50px;
+  }
+  h3 {
+  word-spacing: 30px;
+}
+.text{
+  order: 2;
+}
+.img{
+  order: 1;
+  border-radius: 10px 10px 0 0;
+}
+h5{
+  word-spacing: 20px;
+}
+}
+
+
+  </style>
+  <div class="container">
+    <div class="text">
+      <h1 style="color: hsl(0, 0%, 100%); "> Get <span style="color:hsl(277, 64%, 61%)"> insights</span> that help your business grow.</h1>
+      <p align=left style="color: hsla(0, 0%, 100%, 0.75);">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+        <h3>10k+ 314 12m+</h3>
+        <h5 style="color:hsla(0, 0%, 100%, 0.6);">companies templates queries</h5>
+    </div>
+    <div class="img"></div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Teo</a>.
+  </div>
+</body>
+</html>
